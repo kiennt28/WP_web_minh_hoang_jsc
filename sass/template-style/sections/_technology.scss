@@ -1,0 +1,75 @@
+#technology {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  position: relative;
+  & .technology-content {
+    & .technology-heading {
+      margin-bottom: 100px;
+      & h2 {
+        position: relative;
+        color: $orange;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 41px;
+        display: inline-block;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 140px;
+          height: 2px;
+          background: $orange;
+          bottom: -10px;
+          left: 50%;
+          margin-left: -72px;
+        }
+      }
+    }
+    & .technology-box {
+      row-gap: 50px;
+      & .technology-items {
+        & .technology-carousel {
+          & .owl-stage-outer {
+            & .owl-stage {
+              & .owl-item {
+                & .item {
+                  & .thumb {
+                    padding: 20px 0px;
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                    -webkit-transition: all 0.25s ease-in-out;
+                    -o-transition: all 0.25s ease-in-out;
+                    transition: all 0.25s ease-in-out;
+                    & img {
+                      height: 75px;
+                      width: auto;
+                      margin-left: auto;
+                      margin-right: auto;
+                    }
+                    &:hover {
+                      background: #f1f1f1;
+                      -webkit-filter: grayscale(0%);
+                      filter: grayscale(0%);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* Mobile: width < 740px */
+@media only screen and (max-width: 739px) {
+  .technology-heading {
+    & h2 {
+      font-size: 20px !important;
+    }
+  }
+  .aos-animate {
+  }
+  #particles-js-4 {
+    display: none;
+  }
+}

@@ -1,0 +1,97 @@
+#about-us {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  position: relative;
+  & .about-title {
+    padding-right: 33px;
+    & h6 {
+      font-size: 15px;
+      font-weight: 600;
+      color: $orange;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100px;
+        background: $orange;
+        bottom: -7px;
+        left: 0;
+      }
+    }
+    & h2 {
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 41px;
+    }
+    & p {
+      font-size: 20px;
+      line-height: 27px;
+      & span {
+        font-weight: 700;
+      }
+      &:nth-of-type(2) {
+        font-size: 17px;
+        color: $dark-gray;
+        line-height: 23px;
+      }
+    }
+    & a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 30px;
+      background: #fb7000;
+      border-radius: 10px;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 700;
+      -webkit-box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+      box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+      border: 1px solid #f95800;
+      -webkit-transition: all 0.25s;
+      -o-transition: all 0.25s;
+      transition: all 0.25s;
+      &:hover {
+        background: $white;
+        color: $orange;
+      }
+      & i {
+        vertical-align: middle;
+        margin-top: -1px;
+        margin-left: 3px;
+      }
+    }
+  }
+}
+/* Mobile: width < 740px */
+@media only screen and (max-width: 739px) {
+  #about-us {
+    padding-top: 250px;
+    padding-bottom: 80px;
+    & .about-box {
+      row-gap: 25px;
+    }
+    & .about-title {
+      padding-right: 0px;
+      & h2 {
+        font-size: 20px;
+        line-height: 27px;
+      }
+      & p {
+        font-size: 17px;
+        line-height: 23px;
+        &:nth-of-type(2) {
+          font-size: 13px;
+          line-height: 17px;
+        }
+      }
+      & a {
+        padding: 6px 10px;
+        font-size: 13px;
+      }
+    }
+    #particles-js-2 {
+      display: none;
+    }
+  }
+}
