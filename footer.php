@@ -79,6 +79,7 @@
     <script src="<?php  echo get_template_directory_uri(); ?>/plugin/js/bootstrap.min.js"></script>
     <script src="<?php  echo get_template_directory_uri(); ?>/plugin/js/jquery.min.js"></script>
     <script src="<?php  echo get_template_directory_uri(); ?>/plugin/js/owl.carousel.min.js"></script>
+    <script src="<?php  echo get_template_directory_uri(); ?>/assets/js/uploadFile.js"></script>
     <script src="<?php  echo get_template_directory_uri(); ?>/assets/js/script.js"></script>
     <script src="<?php  echo get_template_directory_uri(); ?>/plugin/js/carousel.js"></script>
     <script src="<?php  echo get_template_directory_uri(); ?>/plugin/js/particles.min.js"></script>
@@ -89,7 +90,8 @@
     <script src="<?php  echo get_template_directory_uri(); ?>/plugin/js/particles.js"></script>
 </div>
 <script>
-      particlesJS("particles-js", {
+  if(document.getElementById("particles-js")!==null){
+  particlesJS("particles-js", {
         particles: {
           number: { value: 33, density: { enable: true, value_area: 800 } },
           color: { value: "#ffffff" },
@@ -150,6 +152,8 @@
         },
         retina_detect: true,
       });
+  }
+    
     </script>
 
 </body>

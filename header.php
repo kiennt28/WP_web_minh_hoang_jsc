@@ -42,16 +42,16 @@
                                 </ul>
                             </li>
                             <li class="nav-item menu-item">
-                                <a href="about.html" class="nav-link">Giới thiệu</a>
+                                <a href="<?php echo home_url(); ?>/about" class="nav-link">Giới thiệu</a>
                             </li>
                             <li class="nav-item menu-item">
-                                <a href="contact.html" class="nav-link">Liên hệ</a>
+                                <a href="<?php echo home_url(); ?>/contact" class="nav-link">Liên hệ</a>
                             </li>
                             <li class="nav-item menu-item">
-                                <a href="blog.html" class="nav-link">Tin tức</a>
+                                <a href="<?php echo home_url(); ?>/blog" class="nav-link">Tin tức</a>
                             </li>
                             <li class="nav-item menu-item">
-                                <a href="recruitment.html" class="nav-link">Tuyển dụng</a>
+                                <a href="<?php echo home_url(); ?>/recruitment" class="nav-link">Tuyển dụng</a>
                             </li>
                         </ul>
                     </div>

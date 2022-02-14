@@ -430,7 +430,7 @@
                     <h2>Cần tư vấn?</h2>
                     <p>Tiếp cận với các dịch vụ CNTT đáng tin cậy nhất.</p>
                   </div>
-                  <form action="" class="contact-form">
+                  <form action="<?php the_permalink(); ?>" method="post" class="contact-form">
                     <div class="row">
                       <div class="col-lg-6 col-md-6">
                         <div class="form-group">
@@ -440,6 +440,7 @@
                             name="name"
                             type="text"
                             placeholder="Name"
+                            value="<?php echo esc_attr($_POST['name']); ?>"
                           />
                         </div>
                       </div>
@@ -451,6 +452,7 @@
                             name="email"
                             type="email"
                             placeholder="Email"
+                            value="<?php echo esc_attr($_POST['email']); ?>"
                           />
                         </div>
                       </div>
@@ -462,8 +464,9 @@
                             class="form-control"
                             id="phone"
                             name="phone"
-                            type="text"
+                            type="number"
                             placeholder="Phone"
+                            value="<?php echo esc_attr($_POST['phone']); ?>"
                           />
                         </div>
                       </div>
@@ -476,7 +479,7 @@
                             name="comments"
                             id="comments"
                             placeholder="Nhập nội dung bạn muốn gửi."
-                          ></textarea>
+                          ><?php echo esc_textarea($_POST['message_text']); ?></textarea>
                         </div>
                       </div>
                     </div>
